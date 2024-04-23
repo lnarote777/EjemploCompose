@@ -30,9 +30,7 @@ fun Ejercicio5(){
                     color = Color.Black
                 )
             }
-            Spacer(
-                    modifier = Modifier.size(30.dp)
-            )
+            mySpacer(30)
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -45,9 +43,7 @@ fun Ejercicio5(){
                     color = Color.Black,
                 )
             }
-            Spacer(
-                modifier = Modifier.size(50.dp)
-            )
+            mySpacer(50)
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -60,9 +56,7 @@ fun Ejercicio5(){
                     color = Color.Black,
                 )
             }
-            Spacer(
-                modifier = Modifier.size(10.dp)
-            )
+            mySpacer(10)
             Box(
                 modifier = Modifier
                     .fillMaxWidth()

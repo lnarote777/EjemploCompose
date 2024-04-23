@@ -12,11 +12,11 @@ fun main() = application {
         onCloseRequest = ::exitApplication,
         state = windowState,
         title = "My Login") {
-        Ejercicio1()
-        Ejercicio2()
-        Ejercicio3()
-        Ejercicio4()
-        Ejercicio5()
+        //Ejercicio1()
+       // Ejercicio2()
+       // Ejercicio3()
+        //Ejercicio4()
+       // Ejercicio5()
         Ejercicio6()
     }
 }

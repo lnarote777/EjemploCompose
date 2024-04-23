@@ -8,7 +8,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -20,40 +19,75 @@ fun Ejercicio6(){
         color = Color.LightGray
     ){
         Column(
-            modifier = Modifier.fillMaxSize()
+            modifier = Modifier
+                .fillMaxSize()
+
         ) {
             Box(
-                modifier = Modifier.background(Color.Cyan),
-                contentAlignment = Alignment.Center
+                modifier = Modifier
+                    .background(Color.Cyan)
+                    .fillMaxWidth()
+                    .height(200.dp)
+                    .padding(top = 10.dp),
             ){
                 Text(
-                    text = "Ejercicio 6",
+                    text = "Ejercicio 2",
                     fontSize = 30.sp,
-                    color = Color.Black,
+                    color = Color.Blue,
                     modifier = Modifier
                         .background(Color.Yellow)
                         .border(2.dp, Color.Black)
+                        .align(Alignment.TopCenter)
+                        .padding(10.dp)
                 )
             }
             Row(
-                verticalAlignment = Alignment.CenterVertically
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.fillMaxWidth()
             ){
                 Box(
                     modifier = Modifier
                         .background(Color.Blue)
-                        .size(300.dp)
-                ){}
+                        .weight(1f)
+                        .height(100.dp)
+                ){
+
+                    Text(
+                        text = "PMDM",
+                        fontSize = 30.sp,
+                        color = Color.White,
+                        modifier = Modifier.align(Alignment.BottomCenter)
+                    )
+                }
                 Box(
                     modifier = Modifier
                         .background(Color.Green)
-                        .size(300.dp)
-                ){}
+                        .weight(1f)
+                        .height(100.dp)
+                ){
+
+                    Text(
+                        text = "DAM 2",
+                        fontSize = 30.sp,
+                        color = Color.Gray,
+                        modifier = Modifier.align(Alignment.Center)
+                    )
+                }
             }
             Box(
                 modifier = Modifier
                     .background(Color.Magenta)
-                    .fillMaxSize()
-            ){}
+                    .fillMaxWidth()
+                    .height(200.dp)
+
+            ){
+                Text(
+                    text = "...Combinando Column y Box",
+                    fontSize = 22.sp,
+                    color = Color.Yellow,
+                    modifier = Modifier.align(Alignment.BottomEnd)
+                )
+            }
         }
     }
 }
